@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e6c7602d82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        
+        <div class="container">
+            
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Developer</p>
+                <h1>Hi, I'm <span>Affan Wasi</span><br>Web Developer from India</h1>
+                
+            </div>    
+        </div>
+</div>
+<!-- ----about---- -->
+<div id="about"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/img.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>i am affan wasi currently working on this project after this i will attech so many projects</p>
+          
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links"  onclick="opentab('education')">Education</p>
+              <p class="tab-links"  onclick="opentab('projects')">Projects</p>
+             </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing web interface</li>
+                    <li><span>UI/UX</span><br>Designing web interface</li>
+                    <li><span>UI/UX</span><br>Designing web interface</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>BCA</span><br>From CCSU</li>
+                    <li><span>12th</span><br>From BSEB</li>
+                    <li><span>10th</span><br>From CBSE</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="projects">
+                <ul>
+                    <li><span>Springboot</span><br>Using Java</li>
+                    <li><span>Portfolio Website</span><br>Using HTML CSS JS</li>
+                    <li><span>Survey Page</span><br>Using HTML CSS JS</li>
+                </ul>
+            </div>
+        
+           </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- ------portfolio------- -->
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>this that falan dhimkana idar udhar yaha waha</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>this that falan dhimkana idar udhar yaha waha</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>this that falan dhimkana idar udhar yaha waha</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+
+ <!-- -------contact-----    -->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p>example@gmail.com</p>
+                <p>0987654321</p>
+                <a href="images/cv.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="Email" placeholder="example@gmail.com" required>
+                    <textarea name="Message" rows="5" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright"><p>copyright made by Affan Wasi</p></div>
+ </div>
+
+
+
+
+ <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+ </script>
+
+ <script>
+ var sidemenu = document.getElementById("sidemenu");
+
+ function openmenu(){
+    sidemenu.style.right = "0";
+ }
+ function closemenu(){
+    sidemenu.style.right = "-100px";
+ }
+
+
+
+
+
+
+ </script>
+
+</body>
+</html>
