@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e6c7602d82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+             <nav>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hi there,</p>
+                <h1>I'm <span>Affan Wasi</span><br>Full Stack Web Developer From India</h1>
+                <div class="social-icons">
+                   <ul>
+                    <li><a href="https://instagram.com/affan_wasi_?igshid=ZDdkNTZiNTM="
+                     target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/affan_wasi_?t=4KGvFyyy2kB6dlB20cXC9g7s=09"
+                     target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                     <li><a href="https://github.com/affanwasi"
+                        target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/affan-wasi-4aa77a214" 
+                    target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    
+                    </ul> 
+                </div>
+                <div><button type="button">Let's Connect</div>
+                
+            </div>
+    </div>
+
+
+<!-- --------------------------------ABOUT------------------------- -->
+
+
+<div id="about"> 
+    <div class="container">
+        <div class="row">
+
+            <div class="about-col-1">
+                <img src="images/cover.jpg">
+                <a href="images/RESUME.docx" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a BCA student in my final year. I have a passion for full stack development,
+                    and I have studied Java, JavaScript, HTML, and CSS while also learning more about it.</p>
+          
+                <div class="tab-title">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links"  onclick="opentab('education')">Education</p>
+                  <p class="tab-links"  onclick="opentab('personal_info')">Personal Info</p>
+                </div>
+
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                      <li><span>Front End</span></li>
+                      <li><i class="fa-brands fa-html5"></i>      <i class="fa-brands fa-css3"></i></li>
+                      <li><span>Back End</span></li>
+                      <li><i class="fa-brands fa-square-js"></i>    <i class="fa-brands fa-java"></i></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                      <li><span>BCA</span><br>From CCSU</li>
+                      <li><span>12th</span><br>From BSEB</li>
+                      <li><span>10th</span><br>From CBSE</li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-contents" id="personal_info">
+                    <ul>
+                      <li><span>D.O.B</span>: 01/09/2001</li>
+                      <li><span>Strength</span> Unflappeble & Diligent</li>
+                      <li><span>Hobbies</span> Writing Poetries</li>
+                      <li><span>Weakness</span> Ambivert</li>
+                    </ul>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+ <!-- -------------------------------------PORTFOLIO------------------------------ -->
+
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/portfolio.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/portfolio.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/portfolio.png">
+                <div class="layer">
+                   <h3>Portfolio Website</h3>
+                   <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+
+
+ <!-- -------------------------------CERTIFICATE-------------------------------- -->
+ 
+ 
+ <!-- --------------------------------CONTACT--------------------------------------    -->
+
+
+ <div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+                <form action="https://formspree.io/f/moqzeykr"
+                method="POST">
+                   <div>
+                     <label for="subject"></label>
+                      <input type="text" 
+                      name="username" 
+                      placeholder="your name" 
+                      id="username"
+                      required autocomplete="off"
+                     />
+                    </div>
+
+
+                    <div>
+                        <label for="email"></label>                  
+                        <input type="email"
+                         name="Email"
+                         placeholder="example@gmail.com"
+                         id="email"
+                         required autocomplete="off"
+                         />
+                    </div>
+                    
+                    <div>
+                        <label for="textarea"></label>
+                        <textarea name="Message"
+                        rows="5"
+                        placeholder="type your message"
+                        id="textarea"
+                        required autocomplete="off"
+                        min="5">
+                        </textarea>
+                    </div>
+                
+
+                    <div>
+                        <button type="submit"
+                         name="submit"
+                          id="submit"
+                          class="btn btn2" 
+                          value="send message"
+                          >Submit</button>
+                    </div>
+                </form>
+            </div> 
+    <div class="copyright"><p>copyright <i class="fa-solid fa-copyright"></i> made by Affan Wasi</p></div>
+ </div>
+
+
+<!-- ---------------------------------------HTML ENDS HERE-------------------------------- -->
+
+
+ <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+ </script>
+
+ <script>
+ var sidemenu = document.getElementById("sidemenu");
+
+ function openmenu(){
+    sidemenu.style.right = "0";
+ }
+ function closemenu(){
+    sidemenu.style.right = "-100px";
+ }
+
+
+ </script>
+
+</body>
+</html>
